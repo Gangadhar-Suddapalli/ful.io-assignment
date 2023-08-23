@@ -1,0 +1,12 @@
+1. What is reverse-i-search in a Linux terminal?
+A. Reverse-i-search (reverse incremental search) is a handy feature in Linux terminals that allows you to search for      and recall previously entered commands that match a specific pattern. It saves lot of time by finding and reusing the commands from the command history.
+
+2.How do you list out the hidden directories using Linux command line tool?
+A. ls -a
+
+3.How comfortable are you with using Linux-based OS like Ubuntu, Centos, etc?
+A. I am very much handy with this and the reason behind I have taken a course which is included in the final year curriculum.
+
+4.Have you ever used Servers to host any web applications in the past? If yes, what
+services did you set up (Like- Apache/Nginx/FTP/SMTP, etc)?
+A. I have used "HEROKU" server to deploy the web application, and I am hands-on with it.
