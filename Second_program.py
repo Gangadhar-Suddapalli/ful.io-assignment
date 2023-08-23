@@ -12,31 +12,31 @@ from bs4 import BeautifulSoup
 import re
 
 def extract_phone_numbers(text):
-    # Define a regular expression pattern for potential phone number matches
+    
     phone_number_pattern = r'(\+\d{1,3}[-.\s]?)?\(?\d{1,4}\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}'
 
-    # Find all matching phone numbers in the text
+    
     phone_numbers = re.findall(phone_number_pattern, text)
 
     return phone_numbers
 
 def is_valid_phone_number(phone_number):
-    # Remove non-digit characters from the phone number
+    
     digits_only = re.sub(r'\D', '', phone_number)
 
-    # Check if the digits-only number has between 10 and 15 digits (common phone number lengths)
+    
     return 10 <= len(digits_only) <= 15
 
 def get_social_links_email_contacts(url):
     try:
-        # Send a GET request to the website
+        
         response = requests.get(url)
         response.raise_for_status()
 
-        # Parse the HTML content of the page
+        
         soup = BeautifulSoup(response.text, 'html.parser')
 
-        # Extract social links from anchor tags containing 'facebook', 'linkedin', etc.
+       
         social_links = []
         for anchor in soup.find_all('a', href=True):
             href = anchor['href']
